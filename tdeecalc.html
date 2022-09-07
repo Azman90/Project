@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TDEE Calculator</title>
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Azman</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Underbeasts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./tdeecalc.html">TDEE Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Consultation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="text-center container">
+        <h2>TDEE Calculator</h2>
+        <div class="form-check-inline">
+            <input class="form-check-input" type="radio" name="genderradio" id="maleradio">
+            <label class="form-check-label" for="maleradio">
+                Male
+            </label>
+        </div>
+        <div class="form-check-inline" class="text-center">
+            <input class="form-check-input" type="radio" name="genderradio" id="femaleradio">
+            <label class="form-check-label" for="femaleradio">
+                Female
+            </label>
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="number" class="form-control" placeholder="Weight" aria-label="Weight in kg"
+                aria-describedby="weight-addon2" min="20" max="250">
+            <span class="input-group-text" id="weight-addon2">kg</span>
+        </div>
+        <div class="input-group mb-3">
+            <input type="number" class="form-control" placeholder="Height" aria-label="Height in cm"
+                aria-describedby="height-addon2" min="100" max="250">
+            <span class="input-group-text" id="height-addon2">cm</span>
+        </div>
+        <div class="input-group mb-3">
+            <input type="number" class="form-control" placeholder="Age" aria-label="Age" aria-describedby="age-addon2"
+                min="16" max="100">
+        </div>
+        <h4>BMR: </h4>
+        <h5> How active are you?</h5>
+        <div class="form-check-inline" class="text-center">
+            <input class="form-check-input" type="radio" name="activityradio" id="sedradio">
+            <label class="form-check-label" for="sedradio">
+                Sedentary
+            </label>
+        </div>
+        <div class="form-check-inline" class="text-center">
+            <input class="form-check-input" type="radio" name="activityradio" id="lightradio">
+            <label class="form-check-label" for="lightradio">
+                Light active
+            </label>
+        </div>
+        <div class="form-check-inline" class="text-center">
+            <input class="form-check-input" type="radio" name="activityradio" id="modradio">
+            <label class="form-check-label" for="modradio">
+                Moderate
+            </label>
+        </div>
+        <div class="form-check-inline" class="text-center">
+            <input class="form-check-input" type="radio" name="activityradio" id="veryradio">
+            <label class="form-check-label" for="veryradio">
+                Very active
+            </label>
+        </div>
+        <div class="form-check-inline" class="text-center">
+            <input class="form-check-input" type="radio" name="activityradio" id="extraradio">
+            <label class="form-check-label" for="extraradio">
+                Extra Active
+            </label>
+        </div>
+
+        <h4>TDEE: </h4>
+    </div>
+
+
+    <script src="./assets/js/bootstrap.js"></script>
+</body>
+
+</html>
