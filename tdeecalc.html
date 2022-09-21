@@ -22,16 +22,16 @@
                         <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Underbeasts</a>
+                        <a class="nav-link" href="https://www.underbeasts.co.uk/plans-pricing">Underbeasts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Portfolio</a>
+                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./tdeecalc.html">TDEE Calculator</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Consultation</a>
+                        <a class="nav-link" href="./consultation.html">Consultation</a>
                     </li>
                 </ul>
             </div>
@@ -53,20 +53,20 @@
         </div>
 
         <div class="input-group mb-3">
-            <input type="number" class="form-control" placeholder="Weight" aria-label="Weight in kg"
+            <input type="number" class="form-control" placeholder="Weight" aria-label="Weight in kg" id="weight"
                 aria-describedby="weight-addon2" min="20" max="250">
             <span class="input-group-text" id="weight-addon2">kg</span>
         </div>
         <div class="input-group mb-3">
-            <input type="number" class="form-control" placeholder="Height" aria-label="Height in cm"
+            <input type="number" class="form-control" placeholder="Height" aria-label="Height in cm" id="height"
                 aria-describedby="height-addon2" min="100" max="250">
             <span class="input-group-text" id="height-addon2">cm</span>
         </div>
         <div class="input-group mb-3">
-            <input type="number" class="form-control" placeholder="Age" aria-label="Age" aria-describedby="age-addon2"
+            <input type="number" class="form-control" placeholder="Age" aria-label="Age" aria-describedby="age-addon2" id="age"
                 min="16" max="100">
         </div>
-        <h4>BMR: </h4>
+        <h4>BMR: <span id="bmr"></span>Kcal</h4>
         <h5> How active are you?</h5>
         <div class="form-check-inline" class="text-center">
             <input class="form-check-input" type="radio" name="activityradio" id="sedradio">
@@ -99,11 +99,13 @@
             </label>
         </div>
 
-        <h4>TDEE: </h4>
+        <h4>TDEE: <span id="tdee"></span>Kcal</h4>
     </div>
 
+   <script src="./assets/js/bootstrap.js"></script>
+   <script src='https://code.jquery.com/jquery-3.6.1.min.js'></script>
+   <script src='./assets/js/tdee.js'></script>
 
-    <script src="./assets/js/bootstrap.js"></script>
 </body>
 
 </html>
